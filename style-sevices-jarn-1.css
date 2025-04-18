@@ -129,7 +129,6 @@ header{
   transform-origin: left;
 }
 
-
 .container-upper-body{
     display: flex;
     justify-content: center;
@@ -157,134 +156,36 @@ header{
     align-items: center;
 }
 
-.container-contact{
-  margin-top: 100px;
-  display: flex;
-  justify-content: space-around;
+
+.img-jarn-section{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 300px;
 }
 
-.container-contact p{
-  color: white;
+.img-jarn-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 300px;
 }
 
-.container-contact .facebook{
-  background: #374375;
-  border-radius: 25px;
-  padding: 20px;
-  width: 400px;
-  height: 150px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Sarabun", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-}
+.card-background img{
+    /* object-fit: cover; */
+  flex-direction: column;
+    position: relative;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 320px
+  }
 
-.facebook .face-icon i{
-  width: 50px;
-  height: 50px;
-  color: #fffcf5;
-  size: 50px;
-}
+  .img-jarn-section{
+    margin-top:100px;
+  }
 
-
-a{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration:line;
-  color: #5697e0;
-  font-family: "Sarabun", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.facebook .facebook-det a:hover{
-  color: #8f8e8b;
-  font-family: "Sarabun", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  transition: 0.5s;
-  cursor: pointer;
-  border-radius: 6px;
-}
-
-
-.container-contact .tel{
-  background: #374375;
-  border-radius: 25px;
-  padding: 20px;
-  width: 400px;
-  height: 150px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Sarabun", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-}
-
-.tel .tel-icon i{
-  width: 50px;
-  height: 50px;
-  color: #fffcf5;
-  size: 50px;
-}
-
-
-.tel .tel-det a:hover{
-  color: #8f8e8b;
-  font-family: "Sarabun", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  transition: 0.5s;
-  cursor: pointer;
-  border-radius: 6px;
-}
-
-
-.container-contact .adress{
-  background: #374375;
-  border-radius: 25px;
-  padding: 20px;
-  width: 400px;
-  height: 150px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Sarabun", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-}
-
-.adress .adress-icon i{
-  width: 50px;
-  height: 50px;
-  color: #fffcf5;
-  size: 50px;
-}
-
-
-
-.adress .adress-det a:hover{
-  color: #8f8e8b;
-  font-family: "Sarabun", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  transition: 0.5s;
-  cursor: pointer;
-  border-radius: 6px;
-}
-
-.map-container {
-  margin-top: 50px;
-  padding: 0;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}

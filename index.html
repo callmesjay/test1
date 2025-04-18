@@ -29,32 +29,69 @@
     <div class="banner">
         <h1>ยินดีต้อนรับสู่เว็บไซต์ของเรา</h1>
         <p>เราคือผู้เชี่ยวชาญด้านการติดตั้งและซ่อมแซมระบบจานดาวเทียม</p>
-        <p>และรวมทั้งติดตั้งกล้องวงจรปิดอีกด้วย</p>
+        <p>และรวมทั้งติดตั้งกล้องวงจรปิด</p>
         <p>เรามีทีมงานที่มีประสบการณ์และความเชี่ยวชาญในการให้บริการ</p>
         <p>เพื่อให้คุณได้รับบริการที่ดีที่สุด</p>
-        <p>ติดต่อเราได้ที่เบอร์โทรศัพท์ 123-456-7890</p>
+        <p>ติดต่อเราได้ที่เบอร์โทรศัพท์ 089-865-1250</p>
     </div>
    </section>
 
    <section class="container-mid-body">
     <div class="midle">
-        <img src="https://i.pinimg.com/474x/95/12/ff/9512ff517087a95aed1f2d146d639193.jpg" alt="work1">
-        <h2>งานติดตั้งจานดาวเทียม</h2>
+        <img src="img/j10.jpg" alt="work1">
+        <h2>งานติดตั้งจานดาวเทียม และจำหน่ายอุปกรณ์</h2>
         <p>เรามีบริการติดตั้งจานดาวเทียมที่มีคุณภาพ</p>
-        <a href="#">Learn more</a>
+        <p>หลากหลายขนาดในราคาที่ย่อมเยาว์</p>
+        <a href="services-jarn.html">ดูเพิ่มเติม</a>
     </div>
     <div class="midle1">
-        <img src="https://i.pinimg.com/474x/95/12/ff/9512ff517087a95aed1f2d146d639193.jpg" alt="work2">
-        <h2>งานติดตั้งจานดาวเทียม</h2>
-        <p>เรามีบริการติดตั้งจานดาวเทียมที่มีคุณภาพ</p>
-        <a href="#">Learn more</a>
+        <img src="img/j7.jpg" alt="work2">
+        <h2>งานติดตั้งกล้องวงจรปิด และจำหน่ายอุปกรณ์</h2>
+        <p>เรามีบริการติดตั้งกล้องวงจรปิดหลายระบบ</p>
+        <p>ทั้งมีสายและไร้สาย ดูผ่านโทรศัพท์มือถือได้ทุกเวลา</p>
+        <a href="#">ดูเพิ่มเติม</a>
     </div>
     <div class="midle2">
-        <img src="https://i.pinimg.com/474x/95/12/ff/9512ff517087a95aed1f2d146d639193.jpg" alt="work3">
-        <h2>งานติดตั้งจานดาวเทียม</h2>
-        <p>เรามีบริการติดตั้งจานดาวเทียมที่มีคุณภาพ</p>
-        <a href="#">Learn more</a>
+        <img src="img/j5.jpg" alt="work3">
+        <h2>งานแก้ไข</h2>
+        <p>รับงานแก้ไขและประกันภายใน 1 ปีที่ได้ติดตั้งกับเรา</p>
+        <p>ไม่ว่าจะเป็นจานดาวเทียมหรือกล้องวงจรปิดก็ตาม</p>
+        <a href="#">ดูเพิ่มเติม</a>
     </div>
    </section>
+
+<!-- Messenger Chat Plugin -->
+<div id="fb-root"></div>
+
+<!-- Messenger Chat Plugin Code -->
+<div id="fb-customer-chat" class="fb-customerchat"></div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "YOUR_PAGE_ID"); // เปลี่ยนเป็น Page ID ของคุณ
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Facebook SDK Code -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v19.0'
+    });
+  };
+
+  (function(d, s, id) {
+    if (d.getElementById(id)) return;
+    var js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/th_TH/sdk/xfbml.customerchat.js";
+    var fjs = d.getElementsByTagName(s)[0];
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+
 </body>
 </html>
