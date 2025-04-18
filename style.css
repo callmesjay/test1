@@ -1,4 +1,229 @@
 @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&display=swap');
+
+body {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #374375;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1590px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #fffcf5;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.menu ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.menu ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #fffcf5;
+  position: relative;
+}
+
+.menu ul li a:hover {
+  color: #8f8e8b;
+  transition: 0.5s;
+}
+
+.menu ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: white;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+.menu ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.container-upper-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-image: url(https://i.pinimg.com/736x/f7/6e/ae/f76eaef8219a8e9a468d7e2c2b9ba2d3.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 0 20px;
+}
+
+.banner {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 12px;
+  color: white;
+  width: 90%;
+  max-width: 1400px;
+  height: 240px;
+  text-align: left;
+}
+
+.banner h1 {
+  font-size: 35px;
+  font-weight: 600;
+  color: #374375;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+  margin: 5px 0;
+}
+
+.container-mid-body {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  background-color: #fffcf5;
+}
+
+.midle, .midle1, .midle2 {
+  flex: 1 1 300px;
+  max-width: 350px;
+  margin: 10px;
+  text-align: center;
+}
+
+.midle img, .midle1 img, .midle2 img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.midle h2, .midle1 h2, .midle2 h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 10px;
+  color: black;
+}
+
+.midle p, .midle1 p, .midle2 p {
+  font-size: 16px;
+  font-weight: 300;
+  color: black;
+  margin-top: 5px;
+}
+
+.midle a, .midle1 a, .midle2 a {
+  display: inline-block;
+  text-decoration: none;
+  color: #374375;
+  background: orange;
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+
+.midle a:hover, .midle1 a:hover, .midle2 a:hover {
+  background: #374375;
+  color: white;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+  .container-head {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .container-upper-body {
+    padding: 20px;
+    text-align: center;
+    height: auto;
+  }
+
+  .banner h1 {
+    font-size: 28px;
+  }
+
+  .banner p {
+    font-size: 16px;
+  }
+
+  .container-mid-body {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .midle, .midle1, .midle2 {
+    max-width: 100%;
+  }
+
+  .midle img, .midle1 img, .midle2 img {
+    height: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&display=swap');
 .sarabun-light {
     font-family: "Sarabun", sans-serif;
     font-weight: 300;
@@ -33,8 +258,8 @@
     font-family: "Sarabun", sans-serif;
     font-weight: 800;
     font-style: normal;
-  }
-  
+  } */
+/*   
 
 *{
     margin: 0;
@@ -43,21 +268,13 @@
 }
 
 header{
-
-     margin: 0;
+  width: 100%;
+  max-width: 1590px;
+  margin: 0 auto;
      width: 100%;
      height: 100px;
     padding: 20px;
     background-color: #374375;
-}
-
-.container-head,
-.container-mid-body {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
 }
 
 .container-head{
@@ -71,8 +288,8 @@ header{
 .container-head .logo{
     font-size: 22px;
     font-weight: bold;
-}
-
+} */
+/* 
 .container-head .logo a{
     text-decoration: none;
     color: #fffcf5;
@@ -107,9 +324,9 @@ header{
   list-style: none;
   padding: 0;
   flex-wrap: wrap;
-}
+} */
 
-.menu ul li a {
+/* .menu ul li a {
   text-decoration: none;
   color: #333;
 }
@@ -130,8 +347,8 @@ header{
     transition: 0.5s;
     cursor: pointer;
     border-radius: 6px;
-}
-
+} */
+/* 
 .menu ul li a:after{
   content: '';
   position: absolute;
@@ -149,9 +366,9 @@ header{
 .menu ul li a:hover::after{
   transform: scaleX(1);
   transform-origin: left;
-}
+} */
 
-.container-upper-body{
+/* .container-upper-body{
 
 
   display: flex;
@@ -160,7 +377,7 @@ header{
   width: 100%;
   height: 300px;
   background-image: url(https://i.pinimg.com/736x/f7/6e/ae/f76eaef8219a8e9a468d7e2c2b9ba2d3.jpg);
-  background-attachment:cover;
+  background-attachment:cover; */
 
   /* font-family: "Sarabun", sans-serif;
     display: flex;
@@ -169,24 +386,24 @@ header{
     width: 100%;
     height: 200px;
 background: #92a1c3; */
-}
+/* } */
 
-.container-upper-body .banner{
-  background: rgba(255, 255, 255, 0.2); /* สีพื้นหลังโปร่งใส */
-  backdrop-filter: blur(10px);          /* เบลอพื้นหลัง */
-  padding: 30px;
+/* .container-upper-body .banner{ */
+  /* background: rgba(255, 255, 255, 0.2); สีพื้นหลังโปร่งใส */
+  /* backdrop-filter: blur(10px);          เบลอพื้นหลัง */
+  /* padding: 30px;
   border-radius: 12px;
   color: white;
   width: 100%;
   height: 300px;
     font-family: "Sarabun", sans-serif;
     font-weight: 300;
-    font-style: normal;
+    font-style: normal; */
     /* display: flex; */
-    justify-content: center;
+    /* justify-content: center;
     align-items: center;
-}
-
+} */
+/* 
 .banner h1{
     font-size: 35px;
     font-family: "Sarabun", sans-serif;
@@ -204,23 +421,26 @@ background: #92a1c3; */
     font-style: normal;
     color: black;
     margin-left: 20px;
-}
-
+} */
+/* 
 .midle, .midle1, .midle2 {
   flex: 1 1 300px;
   max-width: 100%;
   text-align: center;
+  display: flex;
+  justify-content: space-around;
+
 }
 
 .midle img, .midle1 img, .midle2 img {
-  width: 100%;
-  height: 200px;
+  width: 320px;
+  height: 320px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 780px) {
   .container-head {
     flex-direction: column;
     align-items: flex-start;
@@ -228,8 +448,8 @@ background: #92a1c3; */
   .menu ul {
     flex-direction: column;
     align-items: flex-start;
-  }
-
+  } */
+/* 
   .midle, .midle1, .midle2 {
     flex: 1 1 100%;
   }
@@ -250,11 +470,11 @@ background: #92a1c3; */
 .container-mid-body .midle{
     display: block;
     width: 100%;
-    height: auto;
+    height: auto; */
     /* margin-left: 50px;
     margin-top: 50px  ;
 flex-direction: column; */
-}
+/* }
 
 .midle h2{
     font-size: 18px;
@@ -272,8 +492,8 @@ flex-direction: column; */
     font-style: normal;
     color: black;
     margin-top: 5px;
-}
-
+} */
+/* 
 img{
   object-fit: cover;
 flex-direction: column;
@@ -299,8 +519,8 @@ flex-direction: column;
     padding: 5px 20px;
     font-size: 16px;
     transition: 0.5s; 
-}
-
+} */
+/* 
 .midle a:hover{
     background: #374375;
     color: white;
@@ -313,11 +533,11 @@ flex-direction: column;
 .container-mid-body .midle1{
   display: block;
   width: 100%;
-  height: auto;
+  height: auto; */
   /* margin-left: 120px;
   margin-top: 50px  ;
 flex-direction: column; */
-}
+/* }
 
 .midle1 h2{
   font-size: 18px;
@@ -326,8 +546,8 @@ flex-direction: column; */
   font-style: normal;
   color: black;
 margin-top: 5px;
-}
-
+} */
+/* 
 .midle1 p{
   font-size: 16px;
   font-family: "Sarabun", sans-serif;
@@ -351,8 +571,8 @@ margin-top: 5px;
   padding: 5px 20px;
   font-size: 16px;
   transition: 0.5s; 
-}
-
+} */
+/* 
 .midle1 a:hover{
   background: #374375;
   color: white;
@@ -365,12 +585,12 @@ margin-top: 5px;
 .container-mid-body .midle2{
   display: block;
   width: 100%;
-  height: auto;
+  height: auto; */
   /* margin-left: 150px;
   margin-top: 50px  ;
 flex-direction: column; */
 }
-
+/* 
 .midle2 h2{
   font-size: 18px;
   font-family: "Sarabun", sans-serif;
@@ -387,8 +607,8 @@ margin-top: 5px;
   font-style: normal;
   color: black;
   margin-top: 5px;
-}
-
+} */
+/* 
 .midle2 a{
   display: inline-block;
   text-decoration: none;
@@ -413,7 +633,7 @@ margin-top: 5px;
   font-style: normal;
   transition: 0.5s; 
 }
-
+ */
 
 
 
